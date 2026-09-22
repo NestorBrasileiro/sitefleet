@@ -1,0 +1,56 @@
+# GERADO POR tools/gen-caddy.mjs — não edite à mão.
+# Regenere com: pnpm gen:caddy
+
+{
+	email nestorcruzbrasileiro@gmail.com
+	servers {
+		trusted_proxies static private_ranges
+	}
+}
+
+(common) {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+
+	# Assets do Next são content-hashed: podem ser imutáveis no cliente.
+	@immutable path /_next/static/* /assets/*
+	header @immutable Cache-Control "public, max-age=31536000, immutable"
+
+	# HTML muda a cada deploy; o proxy revalida, o usuário recebe rápido.
+	@html not path /_next/static/* /assets/*
+	header @html Cache-Control "public, max-age=0, s-maxage=600, stale-while-revalidate=86400"
+
+	reverse_proxy web:3000 {
+		header_up X-Forwarded-Host {host}
+	}
+}
+
+homegymly.com {
+	import common
+}
+
+www.homegymly.com {
+	redir https://homegymly.com{uri} permanent
+}
+
+plantnook.com {
+	import common
+}
+
+www.plantnook.com {
+	redir https://plantnook.com{uri} permanent
+}
+
+churrasqueiro.com.br {
+	import common
+}
+
+www.churrasqueiro.com.br {
+	redir https://churrasqueiro.com.br{uri} permanent
+}

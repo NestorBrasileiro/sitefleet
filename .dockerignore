@@ -1,0 +1,15 @@
+# Sem isto, o "COPY . ." sobrescreve o node_modules instalado no estágio deps
+# pelo da máquina local — binários da plataforma errada e build quebrado.
+node_modules
+**/node_modules
+.next
+**/.next
+.turbo
+**/.turbo
+.git
+.gitignore
+*.log
+.env
+.env.local
+docs
+README.md

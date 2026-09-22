@@ -1,0 +1,17 @@
+{
+  "name": "@fleet/i18n",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@fleet/sites": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.2"
+  }
+}

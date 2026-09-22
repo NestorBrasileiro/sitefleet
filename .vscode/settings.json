@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": { "*.mdx": "mdx" },
+  "search.exclude": { "**/node_modules": true, "**/.next": true, "**/.turbo": true },
+  "tailwindCSS.experimental.classRegex": [["className=\"([^\"]*)\"", "([a-zA-Z0-9\\-:\\[\\]\\/\\.%]+)"]]
+}

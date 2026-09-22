@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Os componentes compartilhados moram fora de apps/web; sem isso o Tailwind
+   não enxerga essas classes e o CSS sai pela metade em produção. */
+@source '../../../../packages/ui/src/**/*.{ts,tsx}';
+@source '../../../../packages/ads/src/**/*.{ts,tsx}';
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', serif;
+}
+
+/* Os valores reais vêm de <ThemeVars>, por site. Estes são só o fallback
+   para o instante antes do CSS do tema aplicar. */
+:root {
+  --accent: #1971c2;
+  --accent-fg: #ffffff;
+  --bg: #ffffff;
+  --fg: #111827;
+  --fg-muted: #6b7280;
+  --line: #e5e7eb;
+  --surface: #f9fafb;
+  --font-body: var(--font-sans);
+}
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* A tipografia do prose segue o tema do site, não a paleta padrão do plugin. */
+.prose {
+  --tw-prose-body: var(--fg);
+  --tw-prose-headings: var(--fg);
+  --tw-prose-bold: var(--fg);
+  --tw-prose-links: var(--accent);
+  --tw-prose-quotes: var(--fg-muted);
+  --tw-prose-hr: var(--line);
+  --tw-prose-th-borders: var(--line);
+  --tw-prose-td-borders: var(--line);
+}
+
+/* Âncoras geradas pelo rehype-autolink-headings. */
+.prose .heading-anchor {
+  color: var(--fg-muted);
+  text-decoration: none;
+  margin-left: 0.35rem;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+.prose :is(h2, h3, h4):hover .heading-anchor {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

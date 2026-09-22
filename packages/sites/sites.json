@@ -1,0 +1,255 @@
+[
+  {
+    "id": "homegymly",
+    "domain": "homegymly.com",
+    "aliases": [
+      "www.homegymly.com"
+    ],
+    "name": {
+      "en": "HomeGymly",
+      "pt-BR": "HomeGymly"
+    },
+    "tagline": {
+      "en": "Build a home gym that actually gets used.",
+      "pt-BR": "Monte uma academia em casa que você realmente usa."
+    },
+    "locales": [
+      "en",
+      "pt-BR"
+    ],
+    "defaultLocale": "en",
+    "theme": {
+      "accent": "#e8590c",
+      "bg": "#fffaf6",
+      "bgDark": "#140d08"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@homegymly.com"
+    },
+    "enabled": true
+  },
+  {
+    "id": "plantnook",
+    "domain": "plantnook.com",
+    "aliases": [
+      "www.plantnook.com"
+    ],
+    "name": {
+      "en": "PlantNook",
+      "pt-BR": "PlantNook"
+    },
+    "tagline": {
+      "en": "Keep your houseplants alive, on purpose.",
+      "pt-BR": "Mantenha suas plantas vivas — de propósito."
+    },
+    "locales": [
+      "en",
+      "pt-BR"
+    ],
+    "defaultLocale": "en",
+    "theme": {
+      "accent": "#2f9e44",
+      "bg": "#f7fdf8",
+      "bgDark": "#08130b"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@plantnook.com"
+    },
+    "enabled": true
+  },
+  {
+    "id": "churrasqueiro",
+    "domain": "churrasqueiro.com.br",
+    "aliases": [
+      "www.churrasqueiro.com.br"
+    ],
+    "name": {
+      "pt-BR": "Churrasqueiro",
+      "en": "Churrasqueiro"
+    },
+    "tagline": {
+      "pt-BR": "Carne, fogo e ponto certo.",
+      "en": "Brazilian barbecue, done right."
+    },
+    "locales": [
+      "pt-BR",
+      "en"
+    ],
+    "defaultLocale": "pt-BR",
+    "theme": {
+      "accent": "#c92a2a",
+      "bg": "#fffafa",
+      "bgDark": "#150909"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@churrasqueiro.com.br"
+    },
+    "enabled": true
+  },
+  {
+    "id": "brewgear",
+    "domain": "brewgear.example",
+    "name": {
+      "en": "BrewGear"
+    },
+    "tagline": {
+      "en": "Coffee gear, tested at home."
+    },
+    "locales": [
+      "en"
+    ],
+    "defaultLocale": "en",
+    "theme": {
+      "accent": "#845ef7"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@brewgear.example"
+    },
+    "enabled": false
+  },
+  {
+    "id": "deskrig",
+    "domain": "deskrig.example",
+    "name": {
+      "en": "DeskRig"
+    },
+    "tagline": {
+      "en": "Desk setups that fix your back."
+    },
+    "locales": [
+      "en"
+    ],
+    "defaultLocale": "en",
+    "theme": {
+      "accent": "#1971c2"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@deskrig.example"
+    },
+    "enabled": false
+  },
+  {
+    "id": "tabletoprules",
+    "domain": "tabletoprules.example",
+    "name": {
+      "en": "Tabletop Rules"
+    },
+    "tagline": {
+      "en": "Board game rules, explained fast."
+    },
+    "locales": [
+      "en"
+    ],
+    "defaultLocale": "en",
+    "theme": {
+      "accent": "#7048e8"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@tabletoprules.example"
+    },
+    "enabled": false
+  },
+  {
+    "id": "trailkit",
+    "domain": "trailkit.example",
+    "name": {
+      "en": "TrailKit"
+    },
+    "tagline": {
+      "en": "Camping gear without the marketing."
+    },
+    "locales": [
+      "en"
+    ],
+    "defaultLocale": "en",
+    "theme": {
+      "accent": "#0ca678"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@trailkit.example"
+    },
+    "enabled": false
+  },
+  {
+    "id": "doghowto",
+    "domain": "doghowto.example",
+    "name": {
+      "en": "DogHowTo",
+      "pt-BR": "DogHowTo"
+    },
+    "tagline": {
+      "en": "Dog training, one habit at a time.",
+      "pt-BR": "Adestramento, um hábito por vez."
+    },
+    "locales": [
+      "en",
+      "pt-BR"
+    ],
+    "defaultLocale": "en",
+    "theme": {
+      "accent": "#f08c00"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@doghowto.example"
+    },
+    "enabled": false
+  },
+  {
+    "id": "bikefix",
+    "domain": "bikefix.example",
+    "name": {
+      "pt-BR": "BikeFix",
+      "en": "BikeFix"
+    },
+    "tagline": {
+      "pt-BR": "Manutenção de bike sem oficina.",
+      "en": "Bike maintenance without a shop."
+    },
+    "locales": [
+      "pt-BR",
+      "en"
+    ],
+    "defaultLocale": "pt-BR",
+    "theme": {
+      "accent": "#1098ad"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@bikefix.example"
+    },
+    "enabled": false
+  },
+  {
+    "id": "cleanhouse",
+    "domain": "cleanhouse.example",
+    "name": {
+      "en": "CleanHouse",
+      "pt-BR": "CleanHouse"
+    },
+    "tagline": {
+      "en": "Cleaning that takes less time.",
+      "pt-BR": "Limpeza que toma menos tempo."
+    },
+    "locales": [
+      "en",
+      "pt-BR"
+    ],
+    "defaultLocale": "en",
+    "theme": {
+      "accent": "#3b5bdb"
+    },
+    "legal": {
+      "owner": "Nestor",
+      "email": "contato@cleanhouse.example"
+    },
+    "enabled": false
+  }
+]
