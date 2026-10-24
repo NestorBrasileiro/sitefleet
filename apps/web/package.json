@@ -15,7 +15,7 @@
     "@fleet/i18n": "workspace:*",
     "@fleet/sites": "workspace:*",
     "@fleet/ui": "workspace:*",
-    "next": "16.3.6",
+    "next": "16.4.1",
     "next-mdx-remote": "6.0.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",

@@ -13,7 +13,7 @@
     "@fleet/i18n": "workspace:*"
   },
   "peerDependencies": {
-    "next": "16.3.6",
+    "next": "16.4.1",
     "react": "19.3.0"
   },
   "devDependencies": {
